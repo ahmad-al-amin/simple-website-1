@@ -1,0 +1,528 @@
+* {
+    font-family: 'Arial ', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body 
+{
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+.common-btn {
+    padding: .5rem .9rem;
+    background: transparent;
+    border: 2px solid rgb(212, 81, 164);
+    margin: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.square {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: rgb(212, 81, 164);
+    margin: 15px 0;
+}
+
+.line {
+    line-height: 8px;
+}
+
+.line1, .line2, .line3 {
+    width: 12px;
+    height: 12px;
+    background: rgb(212, 81, 164);
+    display: inline-block;
+    margin: .2rem;
+}
+ .line2 {
+    width: 60px;
+    height: 2px;
+}
+.line3 {
+    width: 100px;
+    height: 2px;
+}
+
+
+/* DESIGN FOR HEADER SECTION ===============
+==========================================*/
+#header {
+    height: 100vh;
+    background-image: url(assets/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 80px;
+}
+
+/* design for header text  */
+.header-text {
+    max-width: 350px;
+    margin-top: 140px;
+}
+
+.header-text p {
+    color: rgb(35, 34, 34);
+    line-height: 18px;
+    font-size: 16px;
+}
+
+/* design for nav bar  */
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -350px;
+    top: 0;
+    background: rgb(212, 81, 164);
+    z-index: 999;
+    transition: .4s;
+}
+
+#sideNav ul .line span{
+    background: whitesmoke;
+}
+#sideNav ul .line {
+    margin-top: -20px;
+    margin-left: -2px;
+}
+
+#sideNav ul {
+    margin: 120px 20px;
+}
+
+#sideNav ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid wheat;
+}
+
+#sideNav ul li a {
+    color: white;
+}
+
+#menuBtn {
+    width: 35px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 9999;
+}
+
+/* DESIGN FOR ABOUT & OFFERR SECTION =======
+==========================================*/
+#about, #offer {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left {
+    flex-basis: 50%;
+}
+.about-left img {
+    width: 100%;
+}
+
+.about-right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+ .about-text {
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.about-text h2 {
+    margin: 50px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3 {
+    margin: 30px 0 10px;
+    font-size: 25px;
+    font-style: italic;
+    color: grey;
+}
+
+/* DESIGN FOR FEATURES SECTION ==============
+==========================================*/
+#features {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#features .feature-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-row .feature-col {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.feature-col img {
+    width: 100px;
+}
+
+.feature-col h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-btn {
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.feature-btn .line {
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 12px;
+}
+
+
+/* DESIGN FOR FEATURES SECTION ==============
+==========================================*/
+#courses {
+    padding: 100px 0;
+}
+
+#courses .course-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#courses .course-right {
+    flex-basis: 50%;
+}
+
+#courses .course-right img {
+    width: 100%;
+}
+
+#courses .course-left {
+    flex-basis: 50%;
+}
+
+.course-text {
+    max-width: 350px;
+}
+
+.course-text button {
+    margin: 30px 0;
+}
+
+
+/* DESIGN FOR OFFER SECTION ==============
+==========================================*/
+/* style for the offer section is merged with 
+about section in the top  */
+#offer button {
+    margin: 30px 0;
+}
+
+
+/* DESIGN FOR CONTACT SECTION ==============
+==========================================*/
+#contact .contact-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-row .left-col, .right-col {
+    flex-basis: 50%;
+}
+
+.right-col img {
+    width: 100%;
+}
+
+form {
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid rgb(212, 81, 164);
+}
+
+.btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box button {
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
+
+/* DESIGN FOR FOOTER SECTION ==============
+==========================================*/
+#footer {
+    padding: 40px 0 30px;
+}
+
+#footer hr {
+    width: 100%;
+    border-top: 1.3px solid rgb(212, 81, 164);
+}
+
+#footer .footer-row, .footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#footer .left-col {
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+#footer .right-col {
+    flex-basis: 35%;
+    margin-top: ;
+}
+
+#footer .footer-links {
+    align-items: right;
+}
+
+.footer-links h4 {
+    color:rgba(218, 64, 161, 0.648);
+    margin-bottom: 15px;
+}
+
+.footer-links small {
+    color:grey;
+    margin-bottom: 13px;
+}
+
+#footer .right-col .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#footer .right-col .footer-logo {
+    margin-top: 40px;
+}
+
+
+#footer .right-col .footer-logo img{
+    width: 80px;
+}
+
+#footer .right-col .footer-logo button {
+    padding: 4px 15px;
+    font-size: 11px;
+    font-weight: lighter;
+    margin: 0;
+    color: gray;
+    border: 1px solid rgba(218, 64, 161, 0.648);
+}
+
+#footer .copy-right-text small {
+    flex-basis: 30%;
+    color:gray;
+}
+
+
+/* DESIGN FOR SOCIAL ICONS ==============
+==========================================*/
+.social-icons {
+    position: fixed;
+    width: 45px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgb(255, 219, 253);
+}
+
+.social-icons img {
+    display: block;
+    width: 20px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+
+
+
+/*          MEDIA QUARIES         ==========
+==========================================*/
+@media only screen and (max-width: 770px) {
+    .line {
+        text-align: center;
+    }
+    #header {
+        background-image: none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 60px;
+    }
+    
+    .header-text {
+        width: 100%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .container {
+        text-align: center;
+    }
+    .social-icons {
+        width: 30px;
+    }
+    .social-icons img {
+        width: 15px;
+        margin: 20px auto;
+    }
+    .common-btn {
+        padding: .3rem .8rem;
+    }
+     #about img {
+        display: none;
+     }
+     #about .about-text
+     {
+        text-align: center;
+        margin: auto;
+     }
+     .about-left {
+        flex-basis: 0%;
+     }
+    
+    .about-right {
+        flex-basis: 60%;
+    }
+    #about {
+        justify-content: center;
+    }
+    #about h2 {
+        font-size: 20px;
+    }
+    #about h3 {
+        font-size: 18px;
+    }
+    #features {
+        padding-left: 0;
+        text-align: center;
+    }
+    #features img {
+        width: 70px;
+    }
+    #features .line {
+        text-align: center;
+        margin: 0 100%;
+    }
+    #features .feature-btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #courses {
+        justify-content: center;
+    }
+    #courses img {
+        display: none;
+    }
+    #courses .course-left {
+        flex-basis: 100%;
+    }
+    #courses .course-text
+    {
+        margin: auto;
+    }
+
+    #offer .about-right{
+        flex-basis: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    #offer .about-text {
+        margin-right: 0;
+    }
+
+    #contact {
+        text-align: center;
+    }
+    #contact img {
+        display: none;
+    }
+    #contact .left-col {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    #contact .left-col form {
+        margin: auto;
+        margin-top: 40px;
+    }
+    #footer {
+        text-align: center;
+        font-size: 12px;
+    }
+    #footer .left-col {
+        margin: auto;
+        text-align: center;
+    }
+    #footer .right-col .footer-info {
+        flex-wrap: nowrap;
+    }
+    #footer .right-col {
+        margin: auto;
+    }
+
+}
+    
